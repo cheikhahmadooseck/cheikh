@@ -1,55 +1,13 @@
-//buildscript {
-//    ext.kotlin_version = '1.8.10'
-//    repositories {
-//        google()
-//        mavenCentral()
-//    }
-//
-//    dependencies {
-//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-//    }
-//}
+// Fichier de configuration Gradle au niveau du projet Android
 
-
-//buildscript {
-//    ext.kotlin_version = '1.9.0'
-//    repositories {
-//        google()
-//        mavenCentral()
-//    }
-//    dependencies {
-//        classpath 'com.android.tools.build:gradle:7.3.1'
-//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"
-//    }
-//}
-//
-//
-//allprojects {
-//    repositories {
-//        google()
-//        mavenCentral()
-//    }
-//}
-//
-//rootProject.buildDir = "../build"
-//subprojects {
-//    project.buildDir = "${rootProject.buildDir}/${project.name}"
-//}
-//subprojects {
-//    project.evaluationDependsOn(":app")
-//}
-//
-//tasks.register("clean", Delete) {
-//    delete rootProject.buildDir
-//}
 buildscript {
-    ext.kotlin_version = '2.0.10'
+    ext.kotlin_version = '1.9.24'
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2' // or latest stable
+        classpath 'com.android.tools.build:gradle:8.9.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.google.gms:google-services:4.4.2'
     }
@@ -66,6 +24,7 @@ rootProject.buildDir = "../build"
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
+
 subprojects {
     project.evaluationDependsOn(":app")
 }
